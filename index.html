@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header>
+    <header id="header-mobile">
       <div class="logo">
-        <img src="assets/logo.jpeg" alt="Logo" />
+        <a href="/"><img src="assets/logo.jpeg" alt="Logo" /></a>
         <span>NiXo</span>
       </div>
 
@@ -30,9 +30,26 @@
       <nav class="nav" id="active">
         <div class="nav-elements">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre mí</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="about.html">Sobre mí</a></li>
+            <li><a href="https://wa.me/542473504580" target="_blank">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <header id="header-desktop" class="max-width">
+      <div class="logo">
+        <a href="/"><img src="assets/logo.jpeg" alt="Logo" /></a>
+        <span>NiXo</span>
+      </div>
+
+      <nav>
+        <div class="nav-elements">
+          <ul>
+            <li><a href="/" class="element">Home</a></li>
+            <li><a href="about.html" class="element">Sobre mí</a></li>
+            <li class="li-button"><a href="https://wa.me/542473504580" class="button-contact" target="_blank">Contacto</a></li>
           </ul>
         </div>
       </nav>
@@ -41,7 +58,10 @@
     <main class="max-width">
       <section class="portada">
         <div class="info-portada">
-          <h1>Soy Nicolás y soy desarrollador web <span style="color:#0f0140;">FrontEnd</span></h1>
+          <h1>
+            Soy Nicolás y soy desarrollador web
+            <span style="color: #0f0140">FrontEnd</span>
+          </h1>
           <p>Creo páginas web responsive y a tu medida.</p>
         </div>
         <div class="imagen-portada">
@@ -57,22 +77,23 @@
           <img src="assets/skill.png" alt="" />
           <h2>Skills</h2>
         </div>
-
-        <div class="skill">
-          <img src="assets/Python.png" alt="" />
-          <h3>Python</h3>
-        </div>
-        <div class="skill">
-          <img src="assets/js.png" alt="" />
-          <h3>JavaScript</h3>
-        </div>
-        <div class="skill">
-          <img src="assets/css.png" alt="" />
-          <h3>CSS3</h3>
-        </div>
-        <div class="skill">
-          <img src="assets/html.png" alt="" />
-          <h3>HTML5</h3>
+        <div class="skills-container">
+          <div class="skill">
+            <img src="assets/Python.png" alt="" />
+            <h3>Python</h3>
+          </div>
+          <div class="skill">
+            <img src="assets/js.png" alt="" />
+            <h3>JavaScript</h3>
+          </div>
+          <div class="skill">
+            <img src="assets/css.png" alt="" />
+            <h3>CSS3</h3>
+          </div>
+          <div class="skill">
+            <img src="assets/html.png" alt="" />
+            <h3>HTML5</h3>
+          </div>
         </div>
       </section>
     </main>
@@ -81,7 +102,7 @@
       <ul>
         <a href="#">Home</a>
         <a href="#">Sobre mí</a>
-        <a href="#">Contacto</a>
+        <a href="https://wa.me/542473504580" target="_blank">Contacto</a>
       </ul>
     </footer>
 

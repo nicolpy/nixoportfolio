@@ -12,6 +12,10 @@
   max-width: 1000px;
 }
 
+#header-desktop{
+  display: none;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -46,7 +50,7 @@ header {
   justify-content: flex-end;
 }
 
-nav {
+.nav {
   position: fixed;
   top: 0;
   right: 0;
@@ -68,6 +72,7 @@ nav {
   font-weight: bold;
   font-size: 22px;
   color: #4703a6;
+  cursor: pointer;
 }
 
 .logo img {
@@ -185,7 +190,7 @@ main {
   font-weight: 800;
 }
 
-.skills {
+/*.skills {
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
@@ -194,15 +199,22 @@ main {
   align-items: center;
   margin: 30px;
 }
+*/
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 18px;
+}
 
 .skill {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
   background: var(--very-dark-violet);
-  padding: 40px;
+  padding: 30px;
   color: var(--light-violet);
   border-radius: 30px;
 }
@@ -224,4 +236,108 @@ footer ul a:last-child {
   padding: 15px 60px;
   border-style: dashed;
   border-radius: 15px;
+}
+
+/* Media Query */
+
+@media (min-width: 700px) {
+  .portada {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+  }
+
+  .skills {
+    margin-top: 180px;
+    margin-bottom: 180px;
+  }
+
+  .skills .title{
+    margin-bottom: 80px;
+  }
+
+  .skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+
+@media (min-width: 1200px) {
+  main {
+    margin: 0 auto;
+    margin-top: 200px;
+  }
+
+
+  #header-mobile {
+    display: none;
+  }
+
+  #header-desktop {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .max-width{
+    width: 1200px;
+  }
+
+  .nav-elements {
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  .nav-elements ul{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .li-button{
+    cursor: pointer;
+  }
+
+  ul li .button-contact{
+    color: var(--light-violet);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .nav-elements ul li .element{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--dark-violet);
+  }
+
+  footer ul{
+    display: flex;
+    flex-direction: row;
+  }
+
+  footer ul a {
+    margin: 5px;
+    font-size: 16px;
+  }
+  
+  footer ul a:last-child {
+    background: var(--white-violet);
+    padding: 15px 60px;
+    border-style: none;
+    border-radius: 6px;
+    color: var(--semi-light-violet);
+  }
+}
+
+@media (max-width: 1200px) {
+  main {
+    margin: 0 auto;
+    margin-top: 180px;
+  }
 }
