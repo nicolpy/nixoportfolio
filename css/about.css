@@ -34,6 +34,41 @@ main {
     0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
 }
 
+
+
+.proyectos{
+  box-sizing: border-box; /* Asegura que el borde esté dentro del elemento */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: var(--dark-violet);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.proyectos:hover{
+  border: 1px solid;
+}
+
+.proyectos img {
+  width: 60px;
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.proyecto-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
 h2 {
   background: var(--dark-violet);
   padding: 12px 100px;
